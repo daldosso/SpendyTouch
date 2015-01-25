@@ -10,8 +10,8 @@ Ext.define('SendyTouch.view.Main', {
 
         items: [
             {
-                title: 'Welcome',
-                iconCls: 'home',
+                title: 'Expenses',
+                iconCls: 'bookmarks',
 
                 styleHtmlContent: true,
                 scrollable: true,
@@ -19,7 +19,7 @@ Ext.define('SendyTouch.view.Main', {
                 items: {
                     docked: 'top',
                     xtype: 'titlebar',
-                    title: 'Welcome to Sencha Touch 2'
+                    title: 'Spendy'
                 },
 
                 html: [
