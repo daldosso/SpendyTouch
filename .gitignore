@@ -1,0 +1,6 @@
+.sencha
+build
+touch
+.sass
+.sass-cache
+temp
