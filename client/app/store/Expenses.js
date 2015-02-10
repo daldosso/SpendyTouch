@@ -1,11 +1,14 @@
 Ext.define("SendyTouch.store.Expenses", {
     extend: 'Ext.data.Store',
-    alias: 'store.Athletes',
+    alias: 'store.Expenses',
+    requires: [
+        'Ext.data.proxy.JsonP'
+    ],
     config: {
         autoLoad: true,
         proxy: {
-            type: 'ajax',
-            url: 'http://www.adaldosso.com/quantospendi/srv/spese-dettagli-demo.php',
+            type: 'jsonp',
+            url: 'http://www.adaldosso.com/quantospendi/srv/expenses_list_jsonp.php',
             reader: {
                 type: 'json'
             }
