@@ -11,7 +11,7 @@
 */
 
 Ext.application({
-    name: 'SendyTouch',
+    name: 'SpendyTouch',
 
     requires: [
         'Ext.MessageBox'
@@ -53,11 +53,24 @@ Ext.application({
     },
 
     launch: function() {
+
+        SpendyTouch.urlLogin = 'http://www.adaldosso.com/spendytouch/server/login.php';
+
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('SendyTouch.view.Main'));
+        //Ext.Viewport.add(Ext.create('SpendyTouch.view.Main'));
+
+        Ext.data.JsonP.request({
+            url: SpendyTouch.urlLogin,
+            success: function(response) {
+                Ext.Viewport.add({xtype: 'main'});
+            },
+            failure: function() {
+                Ext.Viewport.add({xtype: 'login'});
+            }
+        });
     },
 
     onUpdated: function() {

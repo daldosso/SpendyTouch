@@ -32,7 +32,7 @@ Ext.Loader.addClassPathMappings({
   "Ext.device.sqlite.SQLResultSet": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLResultSetRowList": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLTransaction": "touch/src/device/sqlite/Sencha.js",
-  "SendyTouch": "app"
+  "SpendyTouch": "app"
 });
 
 Ext.ClassManager.addNameAlternateMappings({
@@ -667,7 +667,12 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.viewport.WindowsPhone": [
     "Ext.viewport.WP"
   ],
-  "SendyTouch.view.Main": []
+  "SpendyTouch.controller.Expenses": [],
+  "SpendyTouch.model.Expenses": [],
+  "SpendyTouch.store.Expenses": [],
+  "SpendyTouch.view.Expenses": [],
+  "SpendyTouch.view.Login": [],
+  "SpendyTouch.view.Main": []
 });
 
 Ext.ClassManager.addNameAliasMappings({
@@ -1399,7 +1404,18 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Ios": [],
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
-  "SendyTouch.view.Main": [
+  "SpendyTouch.controller.Expenses": [],
+  "SpendyTouch.model.Expenses": [],
+  "SpendyTouch.store.Expenses": [
+    "store.Expenses"
+  ],
+  "SpendyTouch.view.Expenses": [
+    "widget.expenses"
+  ],
+  "SpendyTouch.view.Login": [
+    "widget.login"
+  ],
+  "SpendyTouch.view.Main": [
     "widget.main"
   ]
 });

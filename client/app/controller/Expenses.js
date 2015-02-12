@@ -1,4 +1,4 @@
-Ext.define('SendyTouch.controller.Expenses', {
+Ext.define('SpendyTouch.controller.Expenses', {
     extend: 'Ext.app.Controller',
     config: {
         refs: {

@@ -1,4 +1,4 @@
-Ext.define("SendyTouch.store.Expenses", {
+Ext.define("SpendyTouch.store.Expenses", {
     extend: 'Ext.data.Store',
     alias: 'store.Expenses',
     requires: [
@@ -13,6 +13,6 @@ Ext.define("SendyTouch.store.Expenses", {
                 type: 'json'
             }
         },
-        model: 'SendyTouch.model.Expenses'
+        model: 'SpendyTouch.model.Expenses'
     }
 });

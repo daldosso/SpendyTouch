@@ -1,4 +1,4 @@
-Ext.define('SendyTouch.model.Expenses', {
+Ext.define('SpendyTouch.model.Expenses', {
     extend: 'Ext.data.Model',
     
     config: {

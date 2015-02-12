@@ -1,0 +1,1 @@
+<?php  	header('Content-Type: application/json');    $callback = htmlspecialchars($_GET["callback"]);	$response = array();	$response['success'] = 'true';	echo "$callback(" . json_encode($response) . ")";?>

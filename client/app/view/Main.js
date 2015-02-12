@@ -1,4 +1,4 @@
-Ext.define('SendyTouch.view.Main', {
+Ext.define('SpendyTouch.view.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'main',
     requires: [
@@ -9,7 +9,7 @@ Ext.define('SendyTouch.view.Main', {
         tabBarPosition: 'bottom',
 
         items: [{
-                xclass: 'SendyTouch.view.Expenses'
+                xclass: 'SpendyTouch.view.Expenses'
             }, {
                 title: 'Search',
                 iconCls: 'search',

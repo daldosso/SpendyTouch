@@ -1,4 +1,4 @@
-Ext.define('SendyTouch.view.Expenses', {
+Ext.define('SpendyTouch.view.Expenses', {
     extend: 'Ext.NavigationView',
     xtype: 'expenses',
     requires: [
